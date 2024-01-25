@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: Airline-price-prediction-Project
+Version: 0.0.1
+Author: tariq
+Author-email: tariqueisrar7834@gmail.com
+Requires-Dist: pandas
+Requires-Dist: numpy
+Requires-Dist: matplotlib
+Requires-Dist: seaborn

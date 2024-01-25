@@ -1,0 +1,168 @@
+<html>
+<body>
+    <div class="login">
+       <h1>Airline price Prediction Model</h1>
+   
+       <form action="{{ url_for('predictprice') }}" method="post">
+        <h1>
+            <legend>Model for Prediction for Airline price</legend>
+        </h1>
+        <div class="mb-3">
+            <label class="form-label">Airline</label>
+            <select class="form-control" name="airline" placeholder="Enter your Airline" required>
+                <option class="placeholder" selected disabled value="">Select your Fav Airline</option>
+                <option value="SpiceJet">
+                    SpiceJet
+                </option>
+                <option value="AirAsia">
+                    AirAsia
+                </option>
+                <option value="Vistara">
+                    Vistara
+                </option>
+                <option value="GO_FIRST">
+                    GO_FIRST
+                </option>
+                <option value="Indigo">
+                    Indigo
+                </option>
+                <option value="Air_India">
+                    Air_India
+                </option>
+            </select>   
+        </div>
+        <div class="mb-3">
+            <label class="form-label">source_city</label>
+            <select class="form-control" name="source_city" placeholder="Enter your Airline" required>
+                <option class="placeholder" selected disabled value="">Select your source city</option>
+                <option value="Delhi">
+                    Delhi
+                </option>
+                <option value="Mumbai">
+                    Mumbai
+                </option>
+                <option value="Bangalore">
+                    Bangalore
+                </option>
+                <option value="Kolkata">
+                    Kolkata
+                </option>
+                <option value="Hyderabad">
+                    Hyderabad
+                </option>
+                <option value="Chennai">
+                    Chennai
+                </option>
+            </select>   
+        </div>
+        <div class="mb-3">
+            <label class="form-label">departure_time</label>
+            <select class="form-control" name="departure_time" placeholder="Enter your Departure Time" required>
+                <option class="placeholder" selected disabled value="">Select your Departure Time</option>
+                <option value="Evening">
+                    Evening
+                </option>
+                <option value="Early_Morning">
+                    Early_Morning
+                </option>
+                <option value="Morning">
+                    Morning
+                </option>
+                <option value="Afternoon">
+                    Afternoon
+                </option>
+                <option value="Night">
+                    Night
+                </option>
+                <option value="Late_Night">
+                    Late_Night
+                </option>
+            </select>   
+        </div>
+        <div class="mb-3">
+            <label class="form-label">stops</label>
+            <select class="form-control" name="stops" placeholder="Enter your stops" required>
+                <option class="placeholder" selected disabled value="">Select your stops</option>
+                <option value="zero">
+                    zero
+                </option>
+                <option value="one">
+                    one
+                </option>
+                <option value="two_or_more">
+                    two_or_more
+                </option>
+                
+            </select>   
+        </div>
+        <div class="mb-3">
+            <label class="form-label">destination_city</label>
+            <select class="form-control" name="destination_city" placeholder="Enter your destination_city" required>
+                <option class="placeholder" selected disabled value="">Select your destination city</option>
+                <option value="Mumbai">
+                    Mumbai
+                </option>
+                <option value="Bangalore">
+                    Bangalore
+                </option>
+                <option value="Kolkata">
+                    Kolkata
+                </option>
+                <option value="Hyderabad">
+                    Hyderabad
+                </option>
+                <option value="Chennai">
+                    Chennai
+                </option>
+                <option value="Delhi">
+                    Delhi
+                </option>
+            </select>   
+        </div>
+
+
+
+        <div class="mb-3">
+            <label class="form-label">classy</label>
+            <select class="form-control" name="classy" placeholder="Enter your Class" required>
+                <option class="placeholder" selected disabled value="">Select your Class</option>
+                <option value="Economy">
+                    Economy
+                </option>
+                <option value="Business">
+                    Business
+                </option>
+                
+            </select>   
+        </div>
+        <div class="mb-3">
+            <label class="form-label">days lefts to have trip</label>
+            <input class="form-control" type="number" name="days_left"
+                placeholder="Enter your days left for journey" min='0' max='49' />
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label">Add Duration</label>
+            <input class="form-control" type="number" name="duration"
+                placeholder="Enter your journey Duration" min='3' max='10' />
+        </div>
+
+
+        
+
+
+
+       
+        
+        
+        
+        
+        <div class="mb-3">
+            <input class="btn btn-primary" type="submit" value="Predict your Airline Price" required />
+        </div>
+    </form>
+    <h2>
+       THE  prediction price is {{results}}
+    </h2>
+   <body>
+</html>

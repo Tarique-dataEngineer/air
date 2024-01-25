@@ -1,0 +1,8 @@
+README.md
+setup.py
+Airline_price_prediction_Project.egg-info/PKG-INFO
+Airline_price_prediction_Project.egg-info/SOURCES.txt
+Airline_price_prediction_Project.egg-info/dependency_links.txt
+Airline_price_prediction_Project.egg-info/requires.txt
+Airline_price_prediction_Project.egg-info/top_level.txt
+src/__init__.py
