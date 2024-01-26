@@ -33,7 +33,7 @@ Ensure Python and necessary dependencies are installed.
 Follow the steps outlined in the project structure for data preprocessing, model training, and prediction.
 
 #Requirements
-Python 3.*
+Python 3.8
 Pandas
 Scikit-learn
 flask
